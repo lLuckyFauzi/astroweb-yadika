@@ -78,7 +78,7 @@ body {
     text-align: center;
   }
   .contentPlanet .planetDesk {
-    font-size: 10px;
+    font-size: 15px;
     padding: 0px 30px;
     text-align: center;
   }
@@ -96,6 +96,7 @@ body {
     padding: 0px 30px;
     gap: 0px;
     height: 40%;
+    
   }
   .detailPlanet .detailPlanetContainer {
     margin-top: 50px;
@@ -103,6 +104,10 @@ body {
   .detailPlanet .detailPlanetContainer:nth-child(2) {
     margin-bottom: 60px;
   }
+}
+
+.detailPlanet .detail {
+  font-size: 14px;
 }
 
 

@@ -21,6 +21,7 @@ const Map = (props) => {
         alignItems: "center",
         position: "relative",
         top: "40px",
+        zIndex: "0",
       }}
     >
       <MapContainer
@@ -38,9 +39,10 @@ const Map = (props) => {
           position={[position.latitude, position.longitude]}
           icon={issIcon}
         >
-          <Popup maxWidth={560}>
+          <Popup className="modalVideo">
             <div>
               <iframe
+                className="liveVideo"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/86YLFOog4GM?autoplay=1"

@@ -3,3 +3,17 @@
     width: 100%;
     margin-top: 50px;
 }
+
+@media(max-width: 400px) {
+    .leaflet-container {
+        height: 450px;
+    }
+    .modalVideo {
+        width: 250px;
+        height: 200px;
+    }
+    .liveVideo {
+        width: 205px;
+        height: 120px;
+    } 
+}

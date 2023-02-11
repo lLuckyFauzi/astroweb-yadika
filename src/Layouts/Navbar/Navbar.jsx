@@ -55,8 +55,12 @@ const Navbar = () => {
             <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
               <p>Home</p>
             </Link>
-            <p>Planets</p>
-            <p>About</p>
+            <Link
+              to={"/iss"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <p>ISS</p>
+            </Link>
           </div>
         </div>
       </motion.div>

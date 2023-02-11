@@ -52,7 +52,6 @@
 
 @media (max-width: 500px) {
     .navContainer {
-        color: red;
         position: relative;
         transition: 0.3s;
     }

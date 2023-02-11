@@ -26,7 +26,12 @@ const HomeDesk = () => {
         transition={{ delay: 1.2, duration: 1 }}
         className={HomeStyle.deskBtn}
       >
-        <PrimaryButton>Explore</PrimaryButton>
+        <a
+          href="#featureList"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          <PrimaryButton>Explore</PrimaryButton>
+        </a>
       </motion.div>
     </motion.div>
   );

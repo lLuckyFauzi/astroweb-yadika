@@ -424,6 +424,7 @@
     .homeBody .home .desk {
         & .deskBtn {
             width: 100px;
+            font-size: 12px;
         }
     }
     .homeBody .home .desk .earth{
@@ -443,6 +444,7 @@
         position: relative;
         padding-top: 20px;
     }
+    
 
     .homeBody .home .listFeature {
         color: white;
@@ -565,7 +567,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
+            position: relative; 
+
+            
         }
         & .swiperContainer {
             position: relative;
@@ -628,12 +632,18 @@
                 flex-direction: column;
                 gap: 46px;
                 top: 160px;
+                
+                & .astronautDesk {
+                    & .deskAstro {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
 
     .homeBody .iss {
-        margin: 150px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
     
         & .issContainer{
             padding: 0px 30px 90px 30px;
@@ -681,6 +691,7 @@
                     border-radius: 12px;
                     width: 200px;
                     height: 30px;
+                    font-size: 12px;
                 }
             }
         }

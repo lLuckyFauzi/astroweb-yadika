@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Map from "./Partials/Map";
 import { getIssPosition } from "../../data/useIssTracker";
+import { Spin } from "antd";
 
 const Iss = () => {
   const [loading, setLoading] = useState(true);
   const [iss, setIss] = useState({});
+
+  const isLoadingCheck = (value) => {
+    if (value) {
+      setLoading(false);
+      return;
+    }
+  };
 
   const getData = async () => {
     const data = await getIssPosition();
@@ -12,8 +20,9 @@ const Iss = () => {
       latitude: data.data.latitude,
       longitude: data.data.longitude,
     });
-    setLoading(false);
+    isLoadingCheck(data);
   };
+  console.log(loading);
 
   useEffect(() => {
     setInterval(() => {
@@ -30,7 +39,21 @@ const Iss = () => {
             minWidth: "100vw",
           }}
         >
-          {!loading && (
+          {loading ? (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "100vh",
+              }}
+            >
+              <Spin spinning={loading}>
+                <p></p>
+              </Spin>
+            </div>
+          ) : (
             <Map
               position={{ latitude: iss.latitude, longitude: iss.longitude }}
             />
