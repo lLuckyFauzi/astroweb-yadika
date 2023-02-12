@@ -33,7 +33,7 @@ body {
   gap: 80px;
 }
 
-.detailPlanet .detail {
+.detailPlanet .detailPlanetContainer .detail {
   font-size: 20px;
   font-weight: 300;
 }

@@ -338,6 +338,12 @@
             display: flex;
             gap: 46px;
             top: 160px;
+
+            & .astronautDesk {
+                & .deskAstro {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }

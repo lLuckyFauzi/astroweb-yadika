@@ -4,6 +4,11 @@
     margin-top: 50px;
 }
 
+.modalVideo {
+    width: 600px;
+    height: 200px;
+}
+
 @media(max-width: 400px) {
     .leaflet-container {
         height: 450px;
